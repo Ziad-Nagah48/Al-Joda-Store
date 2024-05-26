@@ -1,0 +1,26 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+
+<div class="page">
+
+{% include 'products/list.html' %}
+
+  <div class="category_box">
+
+    <h1>{{title}}</h1>
+
+    <div class="p-container">
+
+    {% for product in products %}
+
+    {% include 'products/product.html' %}
+  
+    {% endfor %}
+    </div>
+
+  </div>
+</div>
+
+{% endblock %}

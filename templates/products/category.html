@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="../../static/styles/category.css">
+
+<link
+  href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap"
+  rel="stylesheet"
+/>
+
+
+<div class="slide">
+  <div class="head_container">
+    <ul class="main-nav">
+
+      {% for category in categories %}
+
+      <li class="cat_"><a href="{% url 'categoried' category.slug %}">{{category.name}}</a></li>
+
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+  

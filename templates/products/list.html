@@ -1,0 +1,53 @@
+<link rel="stylesheet" href="../../static/styles/list.css" />
+<div class="list">
+  <div class="one">
+    <h2>Featured Brands</h2>
+    <div>
+      <input type="checkbox" id="nike" />
+      <label for="nike">nike</label>
+    </div>
+
+    <div>
+      <input type="checkbox" id="adidas" />
+      <label for="adidas">adidas</label>
+    </div>
+    <div>
+      <input type="checkbox" id="puma" />
+      <label for="puma">puma</label>
+    </div>
+    <div>
+      <input type="checkbox" id="predator " />
+      <label for="predator ">predator</label>
+    </div>
+    <div><input type="checkbox" id="nb" /> <label for="nb">NB</label></div>
+    <div>
+      <input type="checkbox" id="fila" /> <label for="fila">fila</label>
+    </div>
+    
+    <h2>price</h2>
+    <a onclick="uptoPrice(150)"><span>up to 150 EG</span></a>
+    <a onclick="uptoPrice(1100)"><span>up to 1100 EG</span></a>
+    <a onclick="uptoPrice(2000)"><span>up to 2000 EG</span></a>
+    <input type="number" placeholder="Min" class="price" onchange="fromPrice(this.value)"/>
+    <input type="number" placeholder="Max" class="price" onchange="uptoPrice(this.value)"/>
+    <h2>Deals & Discounts</h2>
+    <div>
+      <input type="checkbox" id="to" />
+      <label for="to">all Discounts</label>
+    </div>
+    <div>
+      <input type="checkbox" id="del" />
+      <label for="del">today's deals</label>
+    </div>
+    <h2>New Arrivals</h2>
+    <a href="#"><span>last 30 days</span></a>
+    <a href="#"><span>last 90 days</span></a>
+    <h2>Availability</h2>
+    <div>
+      <input type="checkbox" id="ave" />
+      <label for="ave">include out of stock</label>
+    </div>
+    
+  </div>
+</div>
+

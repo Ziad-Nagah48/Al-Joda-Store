@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="../../static/styles/cart.css">
+
+<div class="cart_box">
+
+    <div class="products_box">
+
+        <h2>سلة المشتريات</h2>
+
+        {% for cart_item in cart_items %}
+
+            {% include 'cart/cart_item.html' %}
+
+        {% endfor %}
+
+        <a class="shop" href="{% url 'home' %}"> <i class="fa-solid fa-circle-arrow-right"></i> أكمل تسوق</a>
+
+    </div>
+
+    <div class="summary_box">
+
+        <div class="summary">
+            <h2>ملخص</h2>
+
+            <div class="shipping">تمن التوصيل <h5>100 <span>EGP</span> </h5> </div>
+
+            <div class="price">المجموع الكلي <h5>{{total}} <span>EGP</span> </h5> </div>
+
+        </div>
+
+        <a href="{% url 'checkout' %}">اتمام الشراء</a>
+
+    </div>
+
+</div>
+
+<script src="../../static/JsScripts/quantity_set.js"></script>

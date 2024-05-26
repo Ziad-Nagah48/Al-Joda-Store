@@ -1,0 +1,101 @@
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #2196f3;
+  --main-color-alt: #1787e0;
+  --main-transition: 0.3s;
+  --main-padding-top: 100px;
+  --main-padding-bottom: 100px;
+  --section-background: #ececec;
+}
+
+.page {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  text-transform: capitalize;
+}
+
+.page .category_box{
+  padding: 15px 30px;
+  background-color: white;
+}
+
+.page .p-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 40px;
+}
+.page .box {
+  box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
+  background-color: white;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: transform var(--main-transition),
+    box-shadow var(--main-transition);
+}
+.page .box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
+}
+
+h1{
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.page .box h3{
+  color: rgb(71, 71, 71)
+}
+
+.image-box{
+  height: 300px;
+  overflow: hidden;
+}
+
+.page .box img {
+  width: 100%;
+  max-width: 100%;
+}
+.page .box .p-content {
+  padding: 20px;
+}
+.page .box .p-content h3 {
+  margin: 0;
+}
+.page .box .p-content p {
+  margin: 10px 0 0;
+  line-height: 1.5;
+  color: #777;
+}
+.page .box .info {
+  padding: 20px;
+  border-top: 1px solid #e6e6e7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.page .box .info a {
+  color: var(--main-color);
+  font-weight: bold;
+}
+.page .box .info i {
+  color: var(--main-color);
+}
+.page .box:hover .info i {
+  animation: moving-arrow 0.6s linear infinite;
+}
+/* End product */
+
+.box .price{
+  font-size: 15px;
+  font-weight: bold;
+  color: var(--main-color);
+  display: flex;
+  align-items: center;
+}

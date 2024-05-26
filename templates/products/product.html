@@ -1,0 +1,20 @@
+<div class="box">
+
+  <a href="{% url 'product' product.slug %}">
+    <div class="image-box">
+      <img decoding="async" src="{{product.image.url}}" alt="" />
+    </div>
+
+    <div class="p-content">
+      <h3>{{product.name}}</h3>
+      <p>
+        {{product.description}}
+      </p>
+    </div>
+  </a>
+  <div class="info" onclick="add_to_cart({{product.pk}}, 1)">
+    <a>Add cart</a>
+    <span class="price">{{product.price}}EGP</span>
+  </div>
+    
+</div>

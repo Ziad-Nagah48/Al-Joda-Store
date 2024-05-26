@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: none;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.box{
+    color: whitesmoke;
+    background-image: linear-gradient(-20deg, #2195f3 0%, #2c8edf 100%);
+    padding: 60px;
+    border-radius: 20px;
+    line-height: 40px;
+    font-size: x-large;
+}
+
+.box a{
+    cursor: pointer;
+}

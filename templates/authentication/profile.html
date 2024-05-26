@@ -1,0 +1,46 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<link rel="stylesheet" href="../../static/styles/profile.css">
+
+<div class="profile">
+
+  <h1><i class="fa-solid fa-user"></i>حسابك</h1>
+
+  <hr>
+
+  <div class="profile-info">
+
+    <div class="profile-info-item">
+      <h3>الاسم</h3>
+      <p>{{ user.first_name }} {{user.last_name}}</p>
+    </div>
+
+    <div class="profile-info-item">
+      <h3>البريد الالكتروني</h3>
+      <p>{{ user.email }}</p>
+    </div>
+
+    <div class="profile-info-item">
+      <h3>الهاتف</h3>
+      <p>{{ ship_data.phone_number }}</p>
+    </div>
+
+    <div class="profile-info-item">
+      <h3>العنوان</h3>
+      <p>{{ ship_data.address }}</p>
+    </div>
+
+  </div>
+
+  <div class="profile-actions">
+    <a href="/profile/edit" class="btn btn-primary">تعديل</a>
+    <a href="/profile/delete" class="btn btn-danger">حذف</a>
+  </div>
+    
+
+
+</div>
+
+{% endblock %}
